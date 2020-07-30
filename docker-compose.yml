@@ -4,7 +4,7 @@ services:
     image: swaggerapi/swagger-ui
     container_name: swagger_ui
     ports:
-      - "8000:8080"
+      - "${HOST_PORT}:8080"
     volumes:
       - ./swagger:/usr/share/nginx/html/swagger
     environment:
