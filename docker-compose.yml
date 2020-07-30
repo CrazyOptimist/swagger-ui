@@ -1,0 +1,11 @@
+version: "3"
+services:
+  swagger_ui:
+    image: swaggerapi/swagger-ui
+    container_name: swagger_ui
+    ports:
+      - "8000:8080"
+    volumes:
+      - ./swagger:/usr/share/nginx/html/swagger
+    environment:
+      - API_URL=${FILE_URL}
