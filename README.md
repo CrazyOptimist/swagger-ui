@@ -15,3 +15,4 @@ Launch the app
 ```shell
 docker-compose up -d
 ```
+Open this url on your machine: `http://localhost:8000`
